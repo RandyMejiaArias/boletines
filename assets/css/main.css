@@ -1,0 +1,147 @@
+/* ----- ----- Colors Palette ----- ----- */
+/*
+Black : #242424
+Complex: #C0AEAE
+Mutiny: #851A1A
+Vegas: #C40E0E
+Simple: #FAFDF7
+*/
+html{
+  font-family: 'Comfortaa', cursive;
+  color: #242424;
+}
+
+a{
+  text-decoration: none;
+  color: #C40E0E;
+  cursor: pointer;
+}
+
+a:hover{
+  opacity: 0.8;
+}
+
+img{
+  max-width: 100%;
+}
+
+.header{
+  text-transform: uppercase;
+  color: #851A1A;
+  text-align: center;
+}
+
+.title{
+  font-family: 'Satisfy', cursive;
+  color: #851A1A;
+  border-bottom: solid 2px;
+  padding-bottom: 1em;
+  font-size: 2em;
+}
+
+.container{
+  background: #870000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  max-width: 960px;
+  max-height: 500px;
+  width: 100%;
+  height: 80%;
+  background-color: #FAFDF7;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  position: relative;
+  padding: 1em;
+  overflow: scroll;
+}
+
+td{
+  display: block;
+  width: 100%;
+}
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: bold;
+}
+th{
+  display: none;
+}
+
+.actions{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.close{
+  height: 40px;
+  width: 40px;
+  color: #FAFDF7;
+  border-radius: 50%;
+  background-color: #851A1A;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragraph{
+  line-height: 1.8em;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.fa-star, .fa-star-half-alt{
+  color: #BD7006;
+}
+
+.table{
+  width: 100%;
+  border-spacing: 0;
+}
+
+.table td, .table th{
+  padding: 1em;
+  text-align: left;
+}
+
+.table tr:nth-child(even){
+  background-color: #E4AEAE;
+}
+
+.main-image{
+  float: left;
+  margin-right: 1em;
+  height: 250px;
+}
+
+@media (min-width: 900px){
+  th{
+    display: table-cell;
+  }
+  td{
+    width: auto;
+    display: table-cell;
+  }
+  td:nth-of-type(1){
+    font-size: 1em;
+  }
+  .content{
+    padding: 1.8em;
+  }
+}
+
+@media (min-height: 550px){
+  .content{
+    height: 500px;
+  }
+}
