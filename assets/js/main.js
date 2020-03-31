@@ -23,7 +23,7 @@ links.forEach(function(link){
 
     setTimeout(function(){
       //Redireccionar nuevamente
-      location.href = "/";
+      location.href = "/boletines";
     },600);
   });
 });
